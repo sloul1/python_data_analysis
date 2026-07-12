@@ -79,7 +79,7 @@ drwxr-xr-x. 1 pepper pepper  150 12. 7. 23:14 .git
 drwxr-xr-x. 1 pepper pepper   76 12. 7. 23:26 myenv
 -rw-r--r--. 1 pepper pepper 2091 12. 7. 23:25 README.md
 ```  
-This newly created environment **has to be activated to work in it**.  
+This newly **created environment has to be activated to work in it**.  
 ```sh 
 source myenv/bin/activate   
 ```
