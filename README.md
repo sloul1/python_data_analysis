@@ -31,7 +31,13 @@ git clone git@sloul1:sloul1/python_data_analysis.git
 
 >[!TIP]  
 >Remember to change your local `user.name` and  
->`user.email`so you can push updates to remote repository.  
+>`user.email` to your own so you can push updates to remote repository.  
+```sh
+git config user.name "yourusername"
+```
+```sh
+git config user.name "yourusername@email.tld"
+```
 
 ## 2. Checking dependencies  
 >[!TIP]  
