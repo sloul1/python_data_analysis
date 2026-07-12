@@ -29,6 +29,10 @@ git clone git@sloul1:sloul1/python_data_analysis.git
 >[!WARNING]  
 >CHECK BETWEEN THESE LINES!!    
 
+>[!TIP]  
+>Remember to change your local `user.name` and  
+>`user.email`so you can push updates to remote repository.  
+
 ## 2. Checking dependencies  
 >[!TIP]  
 >To run `check_dependencies.sh` script for verifying packages needed for running this project are installed  `chmod +x` command  
