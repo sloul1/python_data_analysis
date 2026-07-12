@@ -61,8 +61,11 @@ Output:
 The syntax for creating new Python virtual environment  `python3 -m venv /path/to/new/virtual/environment`. The command below creates virtual environment called `myenv`.   
 ```sh
 python3 -m venv myenv
-```
-With command above the `myenv` environment is created in the current directory and this can be confirmed by listing directories.  
+```  
+>[!TIP] 
+>With command above the `myenv` environment is created  
+>in the current directory and this can be confirmed by  
+>listing directories.    
 ```sh
 ls -al
 ```  
