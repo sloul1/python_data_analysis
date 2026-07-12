@@ -49,6 +49,12 @@ might be needed to make script executable before running it below.
 ```sh
 ./check_dependencies
 ```
+Output:
+```sh
+✓ python3 is installed.
+✓ pip3 is installed.
+✓ python3 venv module is installed.
+```  
 
 ## 3. Example of creating virtual environment for the project
 
