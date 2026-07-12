@@ -29,7 +29,7 @@ git clone git@sloul1:sloul1/python_data_analysis.git
 >[!WARNING]  
 >CHECK BETWEEN THESE LINES!!    
 
-## Checking dependencies  
+## 2. Checking dependencies  
 >[!TIP]  
 >To run `check_dependencies.sh` script for verifying packages needed for running this project are installed  `chmod +x` command  
 ```sh
@@ -40,8 +40,8 @@ might be needed to make script executable before running it below.
 ./check_dependencies
 ```
 
-## 3. Example of creating virtual environment for the project.
+## 3. Example of creating virtual environment for the project
 ```sh
 python -m venv /path/to/new/virtual/environment
 ```
-More info on python virtual environment [venv](https://docs.python.org/3.14/library/venv.html).
+More info on python virtual environment at developer's site [venv](https://docs.python.org/3.14/library/venv.html).
