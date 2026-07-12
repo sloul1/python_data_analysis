@@ -106,7 +106,7 @@ Requirements can be uninstalled using command below.
 pip uninstall -r requirements.txt -y
 ```  
 
-# 5. Running python script
+## 5. Running the python script
 
 After installing dependecies mentioned in `requirements.txt` using `pip` the python script can be ran.  
 
