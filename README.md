@@ -115,6 +115,10 @@ python3 nordic_indicators.py
 ```  
 
 The script fetches data of nordic countries (Finland, Sweden, Norway, Denmark and Iceland) from the [World Bank API](https://documents.worldbank.org/en/publication/documents-reports/api) and saves the data in `nordic_indicators.csv` file.  
+
+>[!NOTE] Note that € as currency has existed only from  January 1, 1999  
+>as an accounting currency on and physical coins and   >banknotes entered circulation on January 1, 2002 so 
+>the currency used in this project is in USD.  
 ```sh
 Downloading data from World Bank API...
 Fetching Finland...
@@ -162,7 +166,9 @@ Sample data:
 207  1969         3151.133243                 NaN     4891860          DNK  Denmark
 
 ```
-Fields...  
+Downloaded data includes the following fields:    
 `date` `gdp_per_capita_usd` `internet_users_pct` `population` `country_code` `country`  
 
+>[!NOTE]  
+>Please note that the `internet_user_pct` data has been collected only since from year 1990.  
 
