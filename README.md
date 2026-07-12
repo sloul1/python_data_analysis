@@ -88,4 +88,17 @@ After you are finished with working in the virtual environment it can be deactiv
 ```sh
 deactivate
 ```
-More info on python virtual environment at developer's site [venv](https://docs.python.org/3.14/library/venv.html).
+More info on python virtual environment at developer's site [venv](https://docs.python.org/3.14/library/venv.html).  
+
+## 4. Install requirements in venv using pip
+
+To run included python srcipt in `venv` the requirements must be installed. There is a text file `requirements.txt` that contains information for the additional package installation. To run installation use the following command.  
+
+```sh
+pip install -r requirements.txt
+```
+
+Requirements can be uninstalled using command below.  
+```sh
+pip uninstall -r requirements.txt -y
+```  
