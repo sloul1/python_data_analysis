@@ -36,7 +36,7 @@ git clone git@sloul1:sloul1/python_data_analysis.git
 git config user.name "yourusername"
 ```
 ```sh
-git config user.name "yourusername@email.tld"
+git config user.name "yourusername@domain.tld"
 ```
 
 ## 2. Checking dependencies  
@@ -108,10 +108,10 @@ pip uninstall -r requirements.txt -y
 
 ## 5. Running the python script
 
-After installing dependecies mentioned in `requirements.txt` using `pip` the python script can be ran.  
+After installing dependecies mentioned in `requirements.txt` using `pip` the main python script can be ran.  
 
 ```sh
-python3 nordic_indicators.py
+python3 main.py
 ```  
 
 The script fetches data of nordic countries (Finland, Sweden, Norway, Denmark and Iceland) from the [World Bank API](https://documents.worldbank.org/en/publication/documents-reports/api) and saves the data in `nordic_indicators.csv` file.  
