@@ -175,3 +175,46 @@ Downloaded data includes the following fields:
 >[!NOTE]  
 >Please note that the `internet_user_pct` data has been collected only since from year 1990.  
 
+## Testing the code functionality
+
+In the requirements.txt file there are `pytest` dependencies for testing code functionality. Testing can be done by the command below. 
+
+```sh
+pytest -v --cov=main --cov-report=term-missing
+```
+Report should include the following: 
+```sh
+plugins: mock-3.15.1, cov-7.1.0
+collected 20 items                                                                                                                             
+
+test_main.py::test_build_url PASSED                                                                                                      [  5%]
+test_main.py::test_build_url_contains_country_and_indicator PASSED                                                                       [ 10%]
+test_main.py::test_fetch_indicator_success PASSED                                                                                        [ 15%]
+test_main.py::test_fetch_indicator_calls_correct_url PASSED                                                                              [ 20%]
+test_main.py::test_fetch_indicator_network_error_returns_none PASSED                                                                     [ 25%]
+test_main.py::test_fetch_indicator_unexpected_error_returns_none PASSED                                                                  [ 30%]
+test_main.py::test_clean_indicator_data_returns_dataframe PASSED                                                                         [ 35%]
+test_main.py::test_clean_indicator_data_renames_columns PASSED                                                                           [ 40%]
+test_main.py::test_clean_indicator_data_adds_country_column PASSED                                                                       [ 45%]
+test_main.py::test_clean_indicator_data_removes_null_values PASSED                                                                       [ 50%]
+test_main.py::test_clean_indicator_data_converts_year_to_integer PASSED                                                                  [ 55%]
+test_main.py::test_clean_indicator_data_none_returns_empty_dataframe PASSED                                                              [ 60%]
+test_main.py::test_clean_indicator_data_empty_list_returns_empty_dataframe PASSED                                                        [ 65%]
+test_main.py::test_clean_indicator_data_invalid_payload_returns_empty_dataframe PASSED                                                   [ 70%]
+test_main.py::test_merge_indicators PASSED                                                                                               [ 75%]
+test_main.py::test_merge_indicators_inner_join PASSED                                                                                    [ 80%]
+test_main.py::test_save_to_csv_creates_file PASSED                                                                                       [ 85%]
+test_main.py::test_save_to_csv_preserves_data PASSED                                                                                     [ 90%]
+test_main.py::test_main_workflow PASSED                                                                                                  [ 95%]
+test_main.py::test_main_saves_dataframe PASSED                                                                                           [100%]
+
+================================================================ tests coverage ================================================================
+_______________________________________________ coverage: platform linux, python 3.14.6-final-0 ________________________________________________
+
+Name      Stmts   Miss  Cover   Missing
+---------------------------------------
+main.py      54      0   100%
+---------------------------------------
+TOTAL        54      0   100%
+============================================================== 20 passed in 1.19s ==============================================================
+```
