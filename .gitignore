@@ -1,0 +1,6 @@
+__pycache__
+.pytest_cache
+.coverage
+
+nordic_indicators.csv
+myenv/
