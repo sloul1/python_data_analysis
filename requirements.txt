@@ -1,6 +1,9 @@
+# for main functions
 requests
 pandas
 
+
+# for code functionality testing
 pytest
 pytest-mock
 pytest-cov
