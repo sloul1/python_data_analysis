@@ -2,6 +2,9 @@
 requests
 pandas
 
+# for the visualization
+matplotlib
+numpy
 
 # for code functionality testing
 pytest
