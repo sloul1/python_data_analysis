@@ -1,5 +1,6 @@
 # Python data analysis project in Linux environment
 
+![Alt Text](images/python-powered-w-200x80.png)
 >[!NOTE]
 >This project has been created and tested with **Fedora Linux 43 (Workstation Edition)**.  
 >Requirements for this project are basic understanding of Linux operating systems,  
